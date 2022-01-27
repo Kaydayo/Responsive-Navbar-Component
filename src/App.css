@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: azure;
+}
+.innerNav{
+  background-color: white;
+  padding: 1.5rem;
+  height: 0px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 span{
+  color: rgb(112, 177, 247);
+}
+.menuIcon .icon{
+  font-size: 2rem;
+  color: rgb(112, 177, 247);
+  transition: transform 1s 
+}
+.icon:hover{
+cursor: pointer;
+transform: rotate(360deg);
+}
+
+.linkcontainer{
+  padding: 1.5rem;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li:nth-child(n){
+  margin-top: 1rem;
+}
+.showBox{
+  display: none;
+  transition: all 8s linear;
+}
+
+.mainNav{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+}
+li:hover{
+  background-color: rgb(146, 190, 236);
+  padding: 0.5rem;
+  color: white;
+  transition: all 0.3s linear;
+
+}
+.socials{
+  display: none;
+}
+
+
+
+@media only screen and (min-width: 728px){
+.links{
+  display: flex;
+  gap: 4rem;
+}
+.showBox{
+  display: block;
+}
+.icon{
+  display: none;
+}
+.mainNav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding:0.5rem;
+  height: auto;
+}
+.socials{
+  display: block;
+  color: rgb(112, 177, 247);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+li:nth-child(n){
+  margin-top: 0;
+  padding: 0.5rem;
+}
+li:hover{
+  background-color: gainsboro;
+  border-radius: 0.25rem;
+}
+  
+}
